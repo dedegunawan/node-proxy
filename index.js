@@ -18,7 +18,7 @@ app.use(morgan('dev'));
 
 // Info GET endpoint
 app.get('/info', (req, res, next) => {
-	res.send('This is a proxy service which proxies to JSONPlaceholder API.');
+	res.send('This is a proxy service');
 });
 
 // Proxy endpoints
