@@ -12,6 +12,6 @@
 	"bsi-dev": {
 		"port": "9091",
 		"host": "0.0.0.0",
-		"api_service_url": "https://bsi-va.veza.co.id"
+		"api_service_url": "https://va-bsi.veza.co.id"
 	}
 }
