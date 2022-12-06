@@ -8,10 +8,12 @@ require('dotenv').config();
 // Create Express Server
 const app = express();
 
+const default_config = require('./config.json')[process.env.NODE_ENV || 'dev'];
+
 // Configuration
-const PORT = process.env.PORT || 3000;
-const HOST = process.env.HOST || "localhost";
-const API_SERVICE_URL = process.env.API_SERVICE_URL || "http://127.0.0.1:8000";
+const PORT = process.env.FROM_ENV ? process.env.PORT : default_config.port;
+const HOST = process.env.FROM_ENV ? process.env.HOST : default_config.host;
+const API_SERVICE_URL = process.env.FROM_ENV ? process.env.API_SERVICE_URL : default_config.api_service_url;
 
 // Logging
 app.use(morgan('dev'));

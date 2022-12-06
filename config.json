@@ -1,0 +1,17 @@
+{
+	"dev": {
+		"port": "3000",
+		"host": "0.0.0.0",
+		"api_service_url": "http://127.0.0.1:8000"
+	},
+	"bni-dev": {
+		"port": "9090",
+		"host": "0.0.0.0",
+		"api_service_url": "https://va-bni.veza.co.id"
+	},
+	"bsi-dev": {
+		"port": "9091",
+		"host": "0.0.0.0",
+		"api_service_url": "https://bsi-va.veza.co.id"
+	}
+}
