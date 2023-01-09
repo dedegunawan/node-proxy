@@ -18,7 +18,7 @@ const default_config = require('./config.json')[process.env.NODE_ENV || 'dev'];
 const PORT = process.env.FROM_ENV ? process.env.PORT : default_config.port;
 const HOST = process.env.FROM_ENV ? process.env.HOST : default_config.host;
 const API_SERVICE_URL = process.env.FROM_ENV ? process.env.API_SERVICE_URL : default_config.api_service_url;
-const API_KEY_LOG = process.env.FROM_ENV ? process.env.API_KEY_LOG : default_config.api_key_log;
+const API_KEY_LOG = '2|M6Bj3ZHP04Q5nBbFoSlbYjcoQO6a2h3omIN8cL0n';//process.env.FROM_ENV ? process.env.API_KEY_LOG : default_config.api_key_log;
 
 let requestStart = 0;
 
@@ -66,7 +66,7 @@ function log(proxyRes, responseBuffer, request, response, requestStart) {
 
 function sendLog(log) {
 	try {
-		axios.post('https://simple.dede-gunawan.web.id/api/logs', {
+		axios.post('https://simple-log.dede-gunawan.web.id/api/logs', {
 			log,
 		}, {
 			headers: {
