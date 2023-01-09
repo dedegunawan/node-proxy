@@ -2,16 +2,19 @@
 	"dev": {
 		"port": "3000",
 		"host": "0.0.0.0",
-		"api_service_url": "http://127.0.0.1:8000"
+		"api_service_url": "http://127.0.0.1:8000",
+		"api_key_log": ""
 	},
 	"bni-dev": {
 		"port": "9090",
 		"host": "0.0.0.0",
-		"api_service_url": "https://va-bni.veza.co.id"
+		"api_service_url": "https://va-bni.veza.co.id",
+		"api_key_log": "2|M6Bj3ZHP04Q5nBbFoSlbYjcoQO6a2h3omIN8cL0n"
 	},
 	"bsi-dev": {
 		"port": "9091",
 		"host": "0.0.0.0",
-		"api_service_url": "https://va-bsi.veza.co.id"
+		"api_service_url": "https://va-bsi.veza.co.id",
+		"api_key_log": ""
 	}
 }
